@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Smart Expense Tracker</h1>
+
+    <div class="balance">
+        <h2>Current Balance</h2>
+        <h3 id="balance">₹0</h3>
+    </div>
+
+    <form id="transactionForm">
+        <select id="type">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+        </select>
+
+        <input type="text" id="category" placeholder="Category" required>
+
+        <input type="number" id="amount" placeholder="Amount" required>
+
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <h2>Transactions</h2>
+    <ul id="transactionList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
